@@ -166,6 +166,28 @@ def get_mount_id(BEARER_TOKEN, mount_name):
 	for i in data.get("results"):
 		if i.get("data").get("name").get("en_US") == mount_name:
 			return i.get("data").get("id")
+		
+def get_encounter_drops(BEARER_TOKEN, encounter_id):
+	"""
+	Gets list of encounter drops from encounter id
+	"""
+	REQUEST_URL = f"https://us.api.blizzard.com/data/wow/journal-encounter/{encounter_id}?namespace=static-11.1.5_60179-us"
+	response = requests.get(
+		REQUEST_URL,
+		headers = {"Authorization": f"Bearer {BEARER_TOKEN}"}
+	)
+	try:
+		print(f"Getting list of encounter drops from encounter {encounter_id}...")
+		response.raise_for_status()
+		data = response.json()
+	except requests.HTTPError as e:
+		print(f"HTTP Error: {e}")
+		raise e
+	except Exception as e:
+		print(f"Unexpected Exception: {e}")
+		raise e
+	return data.get("items")
+
 
 if __name__ == '__main__':
 	print(len(get_achieve_index(auth.get_access_token())))
