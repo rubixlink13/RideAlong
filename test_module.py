@@ -41,5 +41,9 @@ class TestAPI(unittest.TestCase):
         self.assertTrue(api.get_mount_id(self.BEARER_TOKEN, "Voracious Gorger") == 1443)
         self.assertTrue(api.get_mount_id(self.BEARER_TOKEN, "Bloodbathed Frostbrood Vanquisher") == 365)
 
+    def test_encounter_drops(self):
+        self.assertTrue(type(api.get_encounter_drops(self.BEARER_TOKEN, 1636)) == list)
+        self.assertTrue(type(api.get_encounter_drops(self.BEARER_TOKEN, 2519)) == list)
+
 if __name__ == '__main__':
     unittest.main()
