@@ -25,6 +25,25 @@ def get_mount_index(BEARER_TOKEN):
 		raise e
 	return data["mounts"]
 
+def get_achieve_index(BEARER_TOKEN):
+	REQUEST_URL = "https://us.api.blizzard.com/data/wow/achievement/index?namespace=static-us&locale=en_US"
+	response = requests.get(
+		REQUEST_URL,
+		headers = {"Authorization" : f"Bearer {BEARER_TOKEN}"}
+	)
+	try:
+		print("Requesting Achievement Index...")
+		response.raise_for_status()
+		data = response.json()
+		print("Success")
+	except requests.HTTPError as e:
+		print(f"HTTP Error: {e}")
+		raise e
+	except Exception as e:
+		print(f"Unexpected Exception: {e}")
+		raise e
+	return data["achievements"]
+
 if __name__ == '__main__':
-	print(len(get_mount_index(auth.get_access_token())))
+	print(len(get_achieve_index(auth.get_access_token())))
 	
