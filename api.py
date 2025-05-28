@@ -50,6 +50,30 @@ def get_achieve_index(BEARER_TOKEN):
 		raise e
 	return data["achievements"]
 
+def get_encounter_index(BEARER_TOKEN):
+	"""
+	Fetch Encounter Index
+	"""
+	REQUEST_URL = "https://us.api.blizzard.com/data/wow/journal-encounter/index?namespace=static-us&locale=en_US"
+	response = requests.get(
+		REQUEST_URL,
+		headers = {"Authorization" : f"Bearer {BEARER_TOKEN}"}
+	)
+	try:
+		print("Requesting Encounter Index...")
+		response.raise_for_status()
+		data = response.json()
+		print("Success")
+	except requests.HTTPError as e:
+		print(f"HTTP Error: {e}")
+		raise e
+	except Exception as e:
+		print(f"Unexpected Exception: {e}")
+		raise e
+	
+	print(len(data["encounters"]))
+	return data["encounters"]
+
 def get_achieve_reward(BEARER_TOKEN, achieve_id):
 	"""
 	Fetch Achievement Reward
