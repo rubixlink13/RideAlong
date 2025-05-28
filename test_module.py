@@ -18,5 +18,9 @@ class TestAPI(unittest.TestCase):
         with self.assertRaises(requests.HTTPError):
             api.get_achieve_index("wrong")
 
+    def test_achieve_reward(self):
+        self.assertTrue(api.get_achieve_reward(6) == None)
+        self.assertTrue(api.get_achieve_reward(4602) == 51954)
+
 if __name__ == '__main__':
     unittest.main()
