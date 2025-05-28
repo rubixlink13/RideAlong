@@ -1,6 +1,5 @@
 import auth
 import requests
-import unittest
 from dotenv import load_dotenv
 
 # Load environmental variables from .env
