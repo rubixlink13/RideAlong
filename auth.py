@@ -10,6 +10,9 @@ _cached_access_token = ''
 _access_token_expiry = 0
 
 def get_access_token():
+    """
+	Fetch Bearer Token
+	"""
 
     TOKEN_URL = "https://oauth.battle.net/token"
     CLIENT_ID = os.getenv("CLIENT_ID")
