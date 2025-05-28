@@ -120,6 +120,29 @@ def get_mount_name(BEARER_TOKEN, item_id):
 		raise e
 	return data.get("preview_item").get("spells")[0].get("spell").get("name")
 
+def get_mount_id(BEARER_TOKEN, mount_name):
+	"""
+	Gets mount id from mount name
+	"""
+	REQUEST_URL = f"https://us.api.blizzard.com/data/wow/search/mount?namespace=static-us&name.en_US={mount_name.lower().replace(" ", "%20")}&orderby=id&_page=1"
+	response = requests.get(
+		REQUEST_URL,
+		headers = {"Authorization": f"Bearer {BEARER_TOKEN}"}
+	)
+	try:
+		print(f"Getting mount id from mount name...")
+		response.raise_for_status()
+		data = response.json()
+	except requests.HTTPERROR as e:
+		print(f"HTTP Error: {e}")
+		raise e
+	except Exception as e:
+		print(f"Unexpected Exception: {e}")
+		raise e
+	for i in data.get("results"):
+		if i.get("data").get("name").get("en_US") == mount_name:
+			return i.get("data").get("id")
+
 if __name__ == '__main__':
 	print(len(get_achieve_index(auth.get_access_token())))
 	
