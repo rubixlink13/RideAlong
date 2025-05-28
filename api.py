@@ -84,7 +84,7 @@ def get_achieve_reward(BEARER_TOKEN, achieve_id):
 		headers = {"Authorization" : f"Bearer {BEARER_TOKEN}"}
 	)
 	try:
-		print("Requesting Achievement Reward...")
+		print(f"Requesting Achievement Reward from {achieve_id}...")
 		response.raise_for_status()
 		data = response.json()
 	except requests.HTTPError as e:
@@ -133,7 +133,7 @@ def get_mount_name(BEARER_TOKEN, item_id):
 		headers = {"Authorization" : f"Bearer {BEARER_TOKEN}"}
 	)
 	try:
-		print(f"Getting mount name from item id...")
+		print(f"Getting mount name from item {item_id}...")
 		response.raise_for_status()
 		data = response.json()
 	except requests.HTTPError as e:
@@ -154,7 +154,7 @@ def get_mount_id(BEARER_TOKEN, mount_name):
 		headers = {"Authorization": f"Bearer {BEARER_TOKEN}"}
 	)
 	try:
-		print(f"Getting mount id from mount name...")
+		print(f"Getting mount id from mount {mount_name}...")
 		response.raise_for_status()
 		data = response.json()
 	except requests.HTTPERROR as e:
