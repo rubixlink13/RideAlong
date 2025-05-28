@@ -22,6 +22,7 @@ class TestAPI(unittest.TestCase):
     def test_achieve_reward(self):
         self.assertTrue(api.get_achieve_reward(self.BEARER_TOKEN, 6) == None)
         self.assertTrue(api.get_achieve_reward(self.BEARER_TOKEN, 4602) == 51954)
+        self.assertTrue(api.get_achieve_reward(self.BEARER_TOKEN, 19343) == None)
 
 if __name__ == '__main__':
     unittest.main()
