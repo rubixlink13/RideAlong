@@ -32,5 +32,9 @@ class TestAPI(unittest.TestCase):
         self.assertTrue(api.get_mount_name(self.BEARER_TOKEN, 51954) == "Bloodbathed Frostbrood Vanquisher")
         self.assertTrue(api.get_mount_name(self.BEARER_TOKEN, 184183) == "Voracious Gorger")
 
+    def test_mount_id(self):
+        self.assertTrue(api.get_mount_id(self.BEARER_TOKEN, "Voracious Gorger") == 1443)
+        self.assertTrue(api.get_mount_id(self.BEARER_TOKEN, "Bloodbathed Frostbrood Vanquisher") == 365)
+
 if __name__ == '__main__':
     unittest.main()
