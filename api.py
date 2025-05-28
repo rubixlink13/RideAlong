@@ -5,7 +5,11 @@ from dotenv import load_dotenv
 # Load environmental variables from .env
 load_dotenv()
 
+
 def get_mount_index(BEARER_TOKEN):
+	"""
+	Fetch Mount Index
+	"""
 	REQUEST_URL = "https://us.api.blizzard.com/data/wow/mount/index?namespace=static-us&locale=en_US"
 	response = requests.get(
 		REQUEST_URL,
@@ -25,6 +29,9 @@ def get_mount_index(BEARER_TOKEN):
 	return data["mounts"]
 
 def get_achieve_index(BEARER_TOKEN):
+	"""
+	Fetch Achievement Index
+	"""
 	REQUEST_URL = "https://us.api.blizzard.com/data/wow/achievement/index?namespace=static-us&locale=en_US"
 	response = requests.get(
 		REQUEST_URL,
