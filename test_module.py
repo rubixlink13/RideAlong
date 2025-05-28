@@ -19,6 +19,11 @@ class TestAPI(unittest.TestCase):
         with self.assertRaises(requests.HTTPError):
             api.get_achieve_index("wrong")
 
+    def test_encounter_index(self):
+        self.assertTrue(type(api.get_encounter_index(self.BEARER_TOKEN)) == list)
+        with self.assertRaises(requests.HTTPError):
+            api.get_encounter_index("wrong")
+
     def test_achieve_reward(self):
         self.assertTrue(api.get_achieve_reward(self.BEARER_TOKEN, 6) == None)
         self.assertTrue(api.get_achieve_reward(self.BEARER_TOKEN, 4602) == 51954)
