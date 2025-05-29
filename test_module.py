@@ -29,6 +29,9 @@ class TestAPI(unittest.TestCase):
         self.assertTrue(api.get_achieve_reward(self.BEARER_TOKEN, 4602) == 51954)
         self.assertTrue(api.get_achieve_reward(self.BEARER_TOKEN, 19343) == None)
 
+    def test_achieve_info(self):
+        self.assertTrue(api.get_achieve_info(self.BEARER_TOKEN, 4602) == {"name" : "Glory of the Icecrown Raider (10 player)", "category" : "Dungeons & Raids"})
+
     def test_check_item_is_mount(self):
         self.assertFalse(api.check_item_is_mount(self.BEARER_TOKEN, 19019))
         self.assertTrue(api.check_item_is_mount(self.BEARER_TOKEN, 51954))
