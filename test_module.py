@@ -45,5 +45,10 @@ class TestAPI(unittest.TestCase):
         self.assertTrue(type(api.get_encounter_drops(self.BEARER_TOKEN, 1636)) == list)
         self.assertTrue(type(api.get_encounter_drops(self.BEARER_TOKEN, 2519)) == list)
 
+    def test_encounter_info(self):
+        self.assertTrue(api.get_encounter_info(self.BEARER_TOKEN, 1636) == {"type": "RAID", "name": "The Lich King", "instance": "Icecrown Citadel"}) 
+        self.assertTrue(api.get_encounter_info(self.BEARER_TOKEN, 2519) == {"type": "RAID", "name": "Fyrakk the Blazing", "instance": "Amirdrassil, the Dream's Hope"}) 
+        self.assertTrue(api.get_encounter_info(self.BEARER_TOKEN, 2396) == {"type": "DUNGEON", "name": "Nalthor the Rimebinder", "instance": "The Necrotic Wake"})
+
 if __name__ == '__main__':
     unittest.main()
