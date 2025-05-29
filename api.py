@@ -101,6 +101,28 @@ def get_achieve_reward(BEARER_TOKEN, achieve_id):
 	else:
 		return data.get("reward_item").get("id")
 	
+def get_achieve_info(BEARER_TOKEN, achieve_id):
+	"""
+	Get dict of achievement name and category from achievement id
+	"""
+	REQUEST_URL = f"https://us.api.blizzard.com/data/wow/achievement/{achieve_id}?namespace=static-us&locale=en_US"
+	response = requests.get(
+		REQUEST_URL,
+		headers = {"Authorization" : f"Bearer {BEARER_TOKEN}"}
+	)
+	try:
+		print(f"Getting dict of Achievement info for Achievement {achieve_id}...")
+		response.raise_for_status()
+		data = response.json()
+	except requests.HTTPError as e:
+		print(f"HTTP Error: {e}")
+		raise e
+	except Exception as e:
+		print(f"Unexpected Exception: {e}")
+		raise e
+	
+	return {"name" : data.get("name"), "category" : data.get("category").get("name")}
+	
 def check_item_is_mount(BEARER_TOKEN, item_id):
 	"""
 	Checks if item is mount
