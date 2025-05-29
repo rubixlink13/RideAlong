@@ -171,7 +171,7 @@ def get_encounter_drops(BEARER_TOKEN, encounter_id):
 	"""
 	Gets list of encounter drops from encounter id
 	"""
-	REQUEST_URL = f"https://us.api.blizzard.com/data/wow/journal-encounter/{encounter_id}?namespace=static-11.1.5_60179-us"
+	REQUEST_URL = f"https://us.api.blizzard.com/data/wow/journal-encounter/{encounter_id}?namespace=static-us&locale=en_US"
 	response = requests.get(
 		REQUEST_URL,
 		headers = {"Authorization": f"Bearer {BEARER_TOKEN}"}
@@ -187,6 +187,27 @@ def get_encounter_drops(BEARER_TOKEN, encounter_id):
 		print(f"Unexpected Exception: {e}")
 		raise e
 	return data.get("items")
+
+def get_encounter_info(BEARER_TOKEN, encounter_id):
+	"""
+	Gets dict with instance name, encounter name, and instance type from encounter id
+	"""
+	REQUEST_URL = f"https://us.api.blizzard.com/data/wow/journal-encounter/{encounter_id}?namespace=static-us&locale=en_US"
+	response = requests.get(
+		REQUEST_URL,
+		headers = {"Authorization": f"Bearer {BEARER_TOKEN}"}
+	)
+	try:
+		print(f"Getting dict of encounter info from encounter {encounter_id}...")
+		response.raise_for_status()
+		data = response.json()
+	except requests.HTTPError as e:
+		print(f"HTTP Error: {e}")
+		raise e
+	except Exception as e:
+		print(f"Unexpected Exception: {e}")
+		raise e
+	return {"type" : data.get("category").get("type"), "name" : data.get("name"), "instance" : data.get("instance").get("name")}
 
 
 if __name__ == '__main__':
