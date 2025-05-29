@@ -36,6 +36,9 @@ class TestAPI(unittest.TestCase):
         self.assertFalse(api.check_item_is_mount(self.BEARER_TOKEN, 19019))
         self.assertTrue(api.check_item_is_mount(self.BEARER_TOKEN, 51954))
 
+    def test_item_name(self):
+        self.assertTrue(api.get_item_name(self.BEARER_TOKEN, 51954) == "Reins of the Bloodbathed Frostbrood Vanquisher")
+
     def test_mount_name(self):
         self.assertTrue(api.get_mount_name(self.BEARER_TOKEN, 51954) == "Bloodbathed Frostbrood Vanquisher")
         self.assertTrue(api.get_mount_name(self.BEARER_TOKEN, 184183) == "Voracious Gorger")
