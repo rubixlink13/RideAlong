@@ -1,4 +1,3 @@
-import auth
 import requests
 
 def _api_request(REQUEST_URL, BEARER_TOKEN, msg):
@@ -83,5 +82,6 @@ def get_encounter_info(BEARER_TOKEN, encounter_id):
 
 
 if __name__ == '__main__':
-	print(len(get_achieve_index(auth.get_access_token())))
+	pass
+	#print(len(get_achieve_index(auth.get_access_token())))
 	
