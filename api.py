@@ -6,6 +6,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 def _api_request(REQUEST_URL, BEARER_TOKEN, msg):
+	"""
+	Helper function for generating an api request
+	"""
 	response = requests.get(
 		REQUEST_URL,
 		headers = {"Authorization" : f"Bearer {BEARER_TOKEN}"}
