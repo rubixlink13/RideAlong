@@ -1,9 +1,5 @@
 import auth
 import requests
-from dotenv import load_dotenv
-
-# Load environmental variables from .env
-load_dotenv()
 
 def _api_request(REQUEST_URL, BEARER_TOKEN, msg):
 	"""
