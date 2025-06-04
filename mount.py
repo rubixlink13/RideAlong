@@ -32,6 +32,15 @@ class Mount():
     
     def get_source(self):
         return self.source
+    
+    def to_dict(self):
+        return {
+            "mount_id" : self.mount_id,
+            "mount_name" : self.mount_name,
+            "item_id" : self.item_id,
+            "item_name" : self.item_name,
+            "source" : self.source.to_dict()
+        }
 
 class Source():
     category = ""
@@ -53,6 +62,9 @@ class Achievement(Source):
     
     def get_achievement_name(self):
         return self.achievement_name
+    
+    def to_dict(self):
+        return self.__dict__
 
 class Drop(Source):
     instance_id = -1
@@ -78,3 +90,6 @@ class Drop(Source):
     
     def get_encounter_name(self):
         return self.encounter_name
+    
+    def to_dict(self):
+        return self.__dict__
