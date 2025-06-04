@@ -72,6 +72,40 @@ class TestAchieveMount(unittest.TestCase):
     def test_achieve_name(self):
         self.assertTrue(self.achieve_mount.get_source().get_achievement_name() == "Glory of the Icecrown Raider (25 player)")
 
+class TestEncounterMount(unittest.TestCase):
+    encounter_mount = Mount(1818, "Anu'relos, Flame's Guidance", 210061, "Reins of Anu'relos, Flame's Guidance", Drop("RAID", 1207, "Amirdrassil, the Dream's Hope", 2519, "Fyrakk the Blazing"))
+
+    def test_mount_id(self):
+        self.assertTrue(self.encounter_mount.get_mount_id() == 1818)
+
+    def test_mount_name(self):
+        self.assertTrue(self.encounter_mount.get_mount_name() == "Anu'relos, Flame's Guidance")
+
+    def test_item_id(self):
+        self.assertTrue(self.encounter_mount.get_item_id() == 210061)
+    
+    def test_item_name(self):
+        self.assertTrue(self.encounter_mount.get_item_name() == "Reins of Anu'relos, Flame's Guidance")
+
+    def test_source(self):
+        self.assertTrue(type(self.encounter_mount.get_source()) == Drop)
+
+    def test_category(self):
+        self.assertTrue(self.encounter_mount.get_source().get_category() == "RAID")
+
+    def test_instance_id(self):
+        self.assertTrue(self.encounter_mount.get_source().get_instance_id() == 1207)
+
+    def test_instance_name(self):
+        self.assertTrue(self.encounter_mount.get_source().get_instance_name() == "Amirdrassil, the Dream's Hope")
+
+    def test_encounter_id(self):
+        self.assertTrue(self.encounter_mount.get_source().get_encounter_id() == 2519)
+
+    def test_encounter_name(self):
+        self.assertTrue(self.encounter_mount.get_source().get_encounter_name() == "Fyrakk the Blazing")
+
 
 if __name__ == '__main__':
+
     unittest.main()
