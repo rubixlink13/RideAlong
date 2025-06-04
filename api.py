@@ -19,7 +19,6 @@ def _api_request(REQUEST_URL, BEARER_TOKEN, msg):
 	except Exception as e:
 		print(f"Unexpected Exception: {e}")
 		raise e
-	print(type(data))
 	return data
 
 
