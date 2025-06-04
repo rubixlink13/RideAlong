@@ -104,6 +104,9 @@ class TestEncounterMount(unittest.TestCase):
 
     def test_encounter_name(self):
         self.assertTrue(self.encounter_mount.get_source().get_encounter_name() == "Fyrakk the Blazing")
+        
+    def test_str(self):
+        self.assertTrue(str(self.encounter_mount) == "Anu'relos, Flame's Guidance")
 
 
 if __name__ == '__main__':
