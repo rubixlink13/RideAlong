@@ -12,6 +12,12 @@ class Mount():
         self.item_name = item_name
         self.source = source
 
+    def __eq__(self, mount_id):
+        return self.mount_id == mount_id
+    
+    def __str__(self):
+        return self.mount_name
+
     def get_mount_id(self):
         return self.mount_id
         
