@@ -1,11 +1,14 @@
 import api
+import json
 import requests
 from mount import Mount, Source, Achievement, Drop
 
 def generate(BEARER_TOKEN):
     master = []
     add_achievement_mounts(BEARER_TOKEN, master)
+    save_json({"data" : [mount.to_dict() for mount in master]})
     add_encounter_mounts(BEARER_TOKEN, master)
+    save_json({"data" : [mount.to_dict() for mount in master]})
     return master
 
 def add_achievement_mounts(BEARER_TOKEN, master):
@@ -26,13 +29,23 @@ def add_achievement_mounts(BEARER_TOKEN, master):
         
         achieve_info = api.get_achieve_info(BEARER_TOKEN, achieve_id)
         if achieve_info.get("reward_description") is not None and achieve_info.get("reward_description").startswith("Mount: "):
-            item_id = achieve_info.get("reward_item").get("id")
-            item_name = achieve_info.get("reward_item").get("name")
-            item_info = api.get_item_info(BEARER_TOKEN, item_id)
-            mount_name = item_info.get("preview_item").get("spells")[0].get("spell").get("name")
+            if achieve_info.get("reward_item") is not None:
+                item_id = achieve_info.get("reward_item").get("id")
+                item_name = achieve_info.get("reward_item").get("name")
+                try:
+                    item_info = api.get_item_info(BEARER_TOKEN, item_id)
+                except requests.HTTPError as e:
+                    print(f"Item {item_id} not found")
+                    continue
+                if item_info.get("preview_item").get("spells") is not None:
+                    mount_name = item_info.get("preview_item").get("spells")[0].get("spell").get("name")
+                else:
+                    continue
+            else:
+                mount_name = achieve_info.get("reward_description")[7:]
             mount_id = _get_mount_id(BEARER_TOKEN, mount_name)
             achieve_name = achieve_info.get("name")
-            category = achieve_info.get("category")
+            category = achieve_info.get("category").get("name")
 
             master.append(Mount(mount_id, mount_name, item_id, item_name, Achievement(category, achieve_id, achieve_name)))
 
@@ -64,18 +77,20 @@ def add_encounter_mounts(BEARER_TOKEN, master):
                 mount_id = _get_mount_id(BEARER_TOKEN, mount_name)
                 item_id = item_info.get("id")
                 item_name = item_info.get("name")
-                category = encounter_info.get("category")
+                category = encounter_info.get("category").get("type")
                 instance_id = encounter_info.get("instance").get("id")
                 instance_name = encounter_info.get("instance").get("name")
                 encounter_id = encounter_info.get("id")
                 encounter_name = encounter_info.get("name")
 
                 master.append(Mount(mount_id, mount_name, item_id, item_name, Drop(category, instance_id, instance_name, encounter_id, encounter_name)))
+
+
+def save_json(master):
+    with open("master.json", "w") as file:
+        json.dump(master, file)
+    print("Saved to json!")
         
-
-
-
-
 def _get_mount_id(BEARER_TOKEN, mount_name):
     """
     Helper function that gets mount id from mount name
