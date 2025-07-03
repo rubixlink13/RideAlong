@@ -9,7 +9,8 @@
                 "ID"        : -1,
                 "NAME"      : "",
                 "INSTANCE"  : "",
-                "ENCOUNTER" : ""
+                "ENCOUNTER" : "",
+                "ZONE"      : ""
             }
         },
         {
@@ -242,6 +243,215 @@
                 "NAME"      : "Glory of the Ulduar Raider (10 player)"
             }
         },
-        
+        {
+            "ID"        : 365,
+            "NAME"      : "Bloodbathed Frostbrood Vanquisher",
+            "TYPE"      : "ACHIEVEMENT",
+            "SOURCE"    : {
+                "TYPE"      : "RAID",
+                "ID"        : 4602,
+                "NAME"      : "Glory of the Icecrown Raider (10 player)"
+            }
+        },
+        {
+            "ID"        : 364,
+            "NAME"      : "Icebound Frostbrood Vanquisher",
+            "TYPE"      : "ACHIEVEMENT",
+            "SOURCE"    : {
+                "TYPE"      : "RAID",
+                "ID"        : 4603,
+                "NAME"      : "Glory of the Icecrown Raider (25 player)"
+            }
+        },
+        {
+            "ID"        : 395,
+            "NAME"      : "Drake of the North Wind",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "DUNGEON",
+                "INSTANCE"  : "The Vortex Pinnacle",
+                "ENCOUNTER" : "Altairus"
+            }
+        },
+        {
+            "ID"        : 397,
+            "NAME"      : "Vitreous Stone Drake",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "DUNGEON",
+                "INSTANCE"  : "The Stonecore",
+                "ENCOUNTER" : "Slabhide"
+            }
+        },
+        {
+            "ID"        : 419,
+            "NAME"      : "Amani Battle Bear",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "DUNGEON",
+                "INSTANCE"  : "Zul'Aman",
+                "ENCOUNTER" : "Kasha's Bag"
+            }
+        },
+        {
+            "ID"        : 410,
+            "NAME"      : "Armored Razzashi Raptor",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "DUNGEON",
+                "INSTANCE"  : "Zul'Gurub",
+                "ENCOUNTER" : "Bloodlord Mandokir"
+            }
+        },
+        {
+            "ID"        : 411,
+            "NAME"      : "Swift Zulian Panther",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "DUNGEON",
+                "INSTANCE"  : "Zul'Gurub",
+                "ENCOUNTER" : "High Priestess Kilnara"
+            }
+        },
+        {
+            "ID"        : 396,
+            "NAME"      : "Drake of the South Wind",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RAID",
+                "INSTANCE"  : "Throne of the Four Winds",
+                "ENCOUNTER" : "Al'Akir"
+            }
+        },
+        {
+            "ID"        : 425,
+            "NAME"      : "Flametalon of Alysrazor",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RAID",
+                "INSTANCE"  : "Firelands",
+                "ENCOUNTER" : "Alysrazor"
+            }
+        },
+        {
+            "ID"        : 415,
+            "NAME"      : "Pureblood Fire Hawk",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RAID",
+                "INSTANCE"  : "Firelands",
+                "ENCOUNTER" : "Ragnaros"
+            }
+        },
+        {
+            "ID"        : 445,
+            "NAME"      : "Experiment 12-B",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RAID",
+                "INSTANCE"  : "Ultraxion",
+                "ENCOUNTER" : "Dragon Soul"
+            }
+        },
+        {
+            "ID"        : 442,
+            "NAME"      : "Blazing Drake",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RAID",
+                "INSTANCE"  : "Deathwing",
+                "ENCOUNTER" : "Dragon Soul"
+            }
+        },
+        {
+            "ID"        : 444,
+            "NAME"      : "Life-Binder's Handmaiden",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RAID",
+                "INSTANCE"  : "Deathwing",
+                "ENCOUNTER" : "Dragon Soul"
+            }
+        },
+        {
+            "ID"        : 420,
+            "NAME"      : "Subdued Seahorse",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RARE",
+                "ENCOUNTER" : "Poseidus",
+                "ZONE"      : "Vashj'ir"
+            }
+        },
+        {
+            "ID"        : 393,
+            "NAME"      : "Phosphorescent Stone Drake",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RARE",
+                "ENCOUNTER" : "Aeonaxx",
+                "ZONE"      : "Deepholm"
+            }
+        },
+        {
+            "ID"        : 400,
+            "NAME"      : "Grey Riding Camel",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RARE",
+                "ENCOUNTER" : "Dormus the Camel-Hoarder",
+                "ZONE"      : "Feralas"
+            }
+        },
+        {
+            "ID"        : 413,
+            "NAME"      : "Flameward Hippogryph",
+            "TYPE"      : "ACHIEVEMENT",
+            "SOURCE"    : {
+                "TYPE"      : "MISC",
+                "ID"        : 5866,
+                "NAME"      : "The Molten Front Offensive"
+            }
+        },
+        {
+            "ID"        : 391,
+            "NAME"      : "Volcanic Stone Drake",
+            "TYPE"      : "ACHIEVEMENT",
+            "SOURCE"    : {
+                "TYPE"      : "DUNGEON",
+                "ID"        : 4845,
+                "NAME"      : "Glory of the Cataclysm Hero"
+            }
+        },
+        {
+            "ID"        : 392,
+            "NAME"      : "Drake of the East Wind",
+            "TYPE"      : "ACHIEVEMENT",
+            "SOURCE"    : {
+                "TYPE"      : "RAID",
+                "ID"        : 4853,
+                "NAME"      : "Glory of the Cataclysm Raider"
+            }
+        },
+        {
+            "ID"        : 417,
+            "NAME"      : "Corrupted Fire Hawk",
+            "TYPE"      : "ACHIEVEMENT",
+            "SOURCE"    : {
+                "TYPE"      : "RAID",
+                "ID"        : 5828,
+                "NAME"      : "Glory of the Firelands Raider"
+            }
+        },
+        {
+            "ID"        : 443,
+            "NAME"      : "Twilight Harbinger",
+            "TYPE"      : "ACHIEVEMENT",
+            "SOURCE"    : {
+                "TYPE"      : "RAID",
+                "ID"        : 6169,
+                "NAME"      : "Glory of the Dragon Soul Raider"
+            }
+        }
     ]
 }
