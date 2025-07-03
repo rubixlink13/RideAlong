@@ -452,6 +452,46 @@
                 "ID"        : 6169,
                 "NAME"      : "Glory of the Dragon Soul Raider"
             }
-        }
+        },
+        {
+            "ID"        : 478,
+            "NAME"      : "Astral Cloud Serpent",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RAID",
+                "INSTANCE"  : "Mogu'shan Vaults",
+                "ENCOUNTER" : "Elegon"
+            }
+        },
+        {
+            "ID"        : 531,
+            "NAME"      : "Spawn of Horridon",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RAID",
+                "INSTANCE"  : "Throne of Thunder",
+                "ENCOUNTER" : "Horridon"
+            }
+        },
+        {
+            "ID"        : 543,
+            "NAME"      : "Clutch of Ji-Kun",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RAID",
+                "INSTANCE"  : "Throne of Thunder",
+                "ENCOUNTER" : "Ji-Kun"
+            }
+        },
+        {
+            "ID"        : -1,
+            "NAME"      : "",
+            "TYPE"      : "",
+            "SOURCE"    : {
+                "TYPE"      : "",
+                "INSTANCE"  : "",
+                "ENCOUNTER" : ""
+            }
+        },
     ]
 }
