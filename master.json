@@ -68,8 +68,8 @@
             "TYPE"      : "DROP",
             "SOURCE"    : {
                 "TYPE"      : "DUNGEON",
-                "INSTANCE"  : "Anzu",
-                "ENCOUNTER" : "Sethekk Halls (Heroic)"
+                "INSTANCE"  : "Sethekk Halls (Heroic)",
+                "ENCOUNTER" : "Anzu"
             }
         },
         {
@@ -78,9 +78,170 @@
             "TYPE"      : "DROP",
             "SOURCE"    : {
                 "TYPE"      : "DUNGEON",
-                "INSTANCE"  : "Kael'thas Sunstrider",
-                "ENCOUNTER" : "Magisters' Terrace (Heroic)"
+                "INSTANCE"  : "Magisters' Terrace",
+                "ENCOUNTER" : "Kael'thas Sunstrider"
             }
-        }
+        },
+        {
+            "ID"        : 183,
+            "NAME"      : "Ashes of Al'ar",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RAID",
+                "INSTANCE"  : "The Eye, Tempest Keep",
+                "ENCOUNTER" : "Kael'thas Sunstrider"
+            }
+        },
+        {
+            "ID"        : 168,
+            "NAME"      : "Fiery Warhorse",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RAID",
+                "INSTANCE"  : "Karazhan",
+                "ENCOUNTER" : "Attumen the Huntsman"
+            }
+        },
+        {
+            "ID"        : 248,
+            "NAME"      : "Bronze Drake",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "DUNGEON",
+                "INSTANCE"  : "The Culling of Stratholme",
+                "ENCOUNTER" : "Infinite Corruptor"
+            }
+        },
+        {
+            "ID"        : 264,
+            "NAME"      : "Blue Proto-Drake",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "DUNGEON",
+                "INSTANCE"  : "Utgarde Pinnacle",
+                "ENCOUNTER" : "Skadi the Ruthless"
+            }
+        },
+        {
+            "ID"        : 246,
+            "NAME"      : "Azure Drake",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RAID",
+                "INSTANCE"  : "The Eye of Eternity",
+                "ENCOUNTER" : "Malygos"
+            }
+        },
+        {
+            "ID"        : 247,
+            "NAME"      : "Blue Drake",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RAID",
+                "INSTANCE"  : "The Eye of Eternity",
+                "ENCOUNTER" : "Malygos"
+            }
+        },
+        {
+            "ID"        : 250,
+            "NAME"      : "Twilight Drake",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RAID",
+                "INSTANCE"  : "The Obsidian Sanctum",
+                "ENCOUNTER" : "Sartharion"
+            }
+        },
+        {
+            "ID"        : 253,
+            "NAME"      : "Black Drake",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RAID",
+                "INSTANCE"  : "The Obsidian Sanctum",
+                "ENCOUNTER" : "Sartharion"
+            }
+        },
+        {
+            "ID"        : 286,
+            "NAME"      : "Grand Black War Mammoth",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RAID",
+                "INSTANCE"  : "Vault of Archavon",
+                "ENCOUNTER" : "All Bosses"
+            }
+        },
+        {
+            "ID"        : 304,
+            "NAME"      : "Mimiron's Head",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RAID",
+                "INSTANCE"  : "Ulduar",
+                "ENCOUNTER" : "Yogg-Saron"
+            }
+        },
+        {
+            "ID"        : 349,
+            "NAME"      : "Onyxian Drake",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RAID",
+                "INSTANCE"  : "Onyxia's Lair",
+                "ENCOUNTER" : "Onyxia"
+            }
+        },
+        {
+            "ID"        : 363,
+            "NAME"      : "Invincible",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RAID",
+                "INSTANCE"  : "Icecrown Citadel",
+                "ENCOUNTER" : "The Lich King"
+            }
+        },
+        {
+            "ID"        : 265,
+            "NAME"      : "Time-Lost Proto-Drake",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RARE",
+                "ENCOUNTER" : "Time-Lost Proto-Drake",
+                "ZONE"      : "The Storm Peaks"
+            }
+        },
+        {
+            "ID"        : 262,
+            "NAME"      : "Red Proto-Drake",
+            "TYPE"      : "ACHIEVEMENT",
+            "SOURCE"    : {
+                "TYPE"      : "DUNGEON",
+                "ID"        : 2136,
+                "NAME"      : "Glory of the Hero"
+            }
+        },
+        {
+            "ID"        : 306,
+            "NAME"      : "Ironbound Proto-Drake",
+            "TYPE"      : "ACHIEVEMENT",
+            "SOURCE"    : {
+                "TYPE"      : "RAID",
+                "ID"        : 2958,
+                "NAME"      : "Glory of the Ulduar Raider (25 player)"
+            }
+        },
+        {
+            "ID"        : 307,
+            "NAME"      : "Rusted Proto-Drake",
+            "TYPE"      : "ACHIEVEMENT",
+            "SOURCE"    : {
+                "TYPE"      : "RAID",
+                "ID"        : 2957,
+                "NAME"      : "Glory of the Ulduar Raider (10 player)"
+            }
+        },
+        
     ]
 }
