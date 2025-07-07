@@ -484,13 +484,153 @@
             }
         },
         {
-            "ID"        : -1,
-            "NAME"      : "",
-            "TYPE"      : "",
+            "ID"        : 559,
+            "NAME"      : "Kor'kron Juggernaut",
+            "TYPE"      : "DROP",
             "SOURCE"    : {
-                "TYPE"      : "",
-                "INSTANCE"  : "",
-                "ENCOUNTER" : ""
+                "TYPE"      : "RAID",
+                "INSTANCE"  : "Siege of Orgrimmar",
+                "ENCOUNTER" : "Garrosh Hellscream"
+            }
+        },
+        {
+            "ID"        : 517,
+            "NAME"      : "Thundering Ruby Cloud Serpent",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RARE",
+                "ENCOUNTER" : "Alani",
+                "ZONE"      : "Vale of Eternal Blossoms"
+            }
+        },
+        {
+            "ID"        : 535,
+            "NAME"      : "Slate Primordial Direhorn",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RARE",
+                "ENCOUNTER" : "Zandalari Warbringer",
+                "ZONE"      : "Pandaria"
+            }
+        },
+        {
+            "ID"        : 534,
+            "NAME"      : "Amber Primordial Direhorn",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RARE",
+                "ENCOUNTER" : ["Zandalari Warbringer", "Zandalari Warscout"],
+                "ZONE"      : "Pandaria"
+            }
+        },
+        {
+            "ID"        : 536,
+            "NAME"      : "Jade Primordial Direhorn",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RARE",
+                "ENCOUNTER" : "Zandalari Warbringer",
+                "ZONE"      : "Pandaria"
+            }
+        },
+        {
+            "ID"        : 561,
+            "NAME"      : "Thundering Onyx Cloud Serpent",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RARE",
+                "ENCOUNTER" : "Huolon",
+                "ZONE"      : "Timeless Isle"
+            }
+        },
+        {
+            "ID"        : 533,
+            "NAME"      : "Cobalt Primordial Direhorn",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "WORLDBOSS",
+                "ENCOUNTER" : "Oondasta",
+                "ZONE"      : "Isle of Giants"
+            }
+        },
+        {
+            "ID"        : 473,
+            "NAME"      : "Heavenly Onyx Cloud Serpent",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "WORLDBOSS",
+                "ENCOUNTER" : "Sha of Anger",
+                "ZONE"      : "Kun-Lai Summit"
+            }
+        },
+        {
+            "ID"        : 515,
+            "NAME"      : "Son of Galleon",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "WORLDBOSS",
+                "ENCOUNTER" : "Galleon",
+                "ZONE"      : "Valley of the Four Winds"
+            }
+        },
+        {
+            "ID"        : 542,
+            "NAME"      : "Thundering Cobalt Cloud Serpent",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "WORLDBOSS",
+                "ENCOUNTER" : "Nalak",
+                "ZONE"      : "Isle of Thunder"
+            }
+        },
+        {
+            "ID"        : 516,
+            "NAME"      : "Pandaren Kite String",
+            "TYPE"      : "ACHIEVEMENT",
+            "SOURCE"    : {
+                "TYPE"      : "REPUTATION",
+                "ID"        : 6828,
+                "NAME"      : "Pandaren Ambassador"
+            }
+        },
+        {
+            "ID"        : 472,
+            "NAME"      : "Crimson Cloud Serpent",
+            "TYPE"      : "ACHIEVEMENT",
+            "SOURCE"    : {
+                "TYPE"      : "DUNGEON",
+                "ID"        : 6927,
+                "NAME"      : "Glory of the Pandaria Hero"
+            }
+        },
+        {
+            "ID"        : 474,
+            "NAME"      : "Heavenly Crimson Cloud Serpent",
+            "TYPE"      : "ACHIEVEMENT",
+            "SOURCE"    : {
+                "TYPE"      : "RAID",
+                "ID"        : 6932,
+                "NAME"      : "Glory of the Pandria Raider"
+            }
+        },
+        {
+            "ID"        : 530,
+            "NAME"      : "Armored Skyscreamer",
+            "TYPE"      : "ACHIEVEMENT",
+            "SOURCE"    : {
+                "TYPE"      : "RAID",
+                "ID"        : 8124,
+                "NAME"      : "Glory of the Thundering Raider"
+            }
+        },
+        {
+            "ID"        : 557,
+            "NAME"      : "Spawn of Galakras",
+            "TYPE"      : "ACHIEVEMENT",
+            "SOURCE"    : {
+                "TYPE"      : "RAID",
+                "ID"        : 8454,
+                "NAME"      : "Glory of the Orgrimmar Raider"
             }
         },
     ]
