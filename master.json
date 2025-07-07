@@ -633,5 +633,185 @@
                 "NAME"      : "Glory of the Orgrimmar Raider"
             }
         },
+        {
+            "ID"        : 627,
+            "NAME"      : "Great Greytusk",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RARE",
+                "ENCOUNTER" : "Gorok",
+                "ZONE"      : "Frostfire Ridge"
+            }
+        },
+        {
+            "ID"        : 612,
+            "NAME"      : "Bloodhoof Bull",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RARE",
+                "ENCOUNTER" : "Nakk the Thunderer",
+                "ZONE"      : "Nagrand"
+            }
+        },
+        {
+            "ID"        : 614,
+            "NAME"      : "Mottled Meadowstomper",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RARE",
+                "ENCOUNTER" : "Luk'hok",
+                "ZONE"      : "Nagrand"
+            }
+        },
+        {
+            "ID"        : 655,
+            "NAME"      : "Sunhide Gronnling",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RARE",
+                "ENCOUNTER" : "Poundfist",
+                "ZONE"      : "Gorgrond"
+            }
+        },
+        {
+            "ID"        : 630,
+            "NAME"      : "Sapphire Riverbeast",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RARE",
+                "ENCOUNTER" : "Slithide",
+                "ZONE"      : "Talador"
+            }
+        },
+        {
+            "ID"        : 636,
+            "NAME"      : "Swift Breezestrider",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RARE",
+                "ENCOUNTER" : "Pathrunner",
+                "ZONE"      : "Shadowmoon Valley"
+            }
+        },
+        {
+            "ID"        : 657,
+            "NAME"      : "Garn Nightowl",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RARE",
+                "ENCOUNTER" : "Nok-Karosh",
+                "ZONE"      : "Frostfire Ridge"
+            }
+        },
+        {
+            "ID"        : 682,
+            "NAME"      : "Voidtalon of the Dark Star",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RARE",
+                "ENCOUNTER" : "Voidtalon Egg",
+                "ZONE"      : "Ashran"
+            }
+        },
+        {
+            "ID"        : 643,
+            "NAME"      : "Warsong Direfang",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RARE",
+                "ENCOUNTER" : ["Vengeance", "Deathtalon", "Terrorfist", "Doomroller"],
+                "ZONE"      : "Tanaan Jungle"
+            }
+        },
+        {
+            "ID"        : 622,
+            "NAME"      : "Armored Razorback",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RARE",
+                "ENCOUNTER" : ["Vengeance", "Deathtalon", "Terrorfist", "Doomroller"],
+                "ZONE"      : "Tanaan Jungle"
+            }
+        },
+        {
+            "ID"        : 611,
+            "NAME"      : "Tundra Icehoof",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RARE",
+                "ENCOUNTER" : ["Vengeance", "Deathtalon", "Terrorfist", "Doomroller"],
+                "ZONE"      : "Tanaan Jungle"
+            }
+        },
+        {
+            "ID"        : 634,
+            "NAME"      : "Solar Spirehawk",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "WORLDBOSS",
+                "ENCOUNTER" : "Rukhmar",
+                "ZONE"      : "Spires of Arak"
+            }
+        },
+        {
+            "ID"        : 613,
+            "NAME"      : "Ironhoof Destroyer",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RAID",
+                "INSTANCE"  : "Blackrock Foundry",
+                "ENCOUNTER" : "Blackhand"
+            }
+        },
+        {
+            "ID"        : 751,
+            "NAME"      : "Felsteel Annihilator",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RAID",
+                "INSTANCE"  : "Hellfire Citadel",
+                "ENCOUNTER" : "Archimonde"
+            }
+        },
+        {
+            "ID"        : 772,
+            "NAME"      : "Soaring Skyterror",
+            "TYPE"      : "ACHIEVEMENT",
+            "SOURCE"    : {
+                "TYPE"      : "EXPLORATION",
+                "ID"        : 10018,
+                "NAME"      : "Draenor Pathfinder"
+            }
+        },
+        {
+            "ID"        : 623,
+            "NAME"      : "Frostplains Battleboar",
+            "TYPE"      : "ACHIEVEMENT",
+            "SOURCE"    : {
+                "TYPE"      : "DUNGEON",
+                "ID"        : 9396,
+                "NAME"      : "Glory of the Draenor Hero"
+            }
+        },
+        {
+            "ID"        : 607,
+            "NAME"      : "Gorestrider Gronnling",
+            "TYPE"      : "ACHIEVEMENT",
+            "SOURCE"    : {
+                "TYPE"      : "RAID",
+                "ID"        : 8985,
+                "NAME"      : "Glory of the Draenor Raider"
+            }
+        },
+        {
+            "ID"        : 758,
+            "NAME"      : "Infernal Direwolf",
+            "TYPE"      : "ACHIEVEMENT",
+            "SOURCE"    : {
+                "TYPE"      : "RAID",
+                "ID"        : 10149,
+                "NAME"      : "Glory of the Hellfire Raider"
+            }
+        },
     ]
 }
