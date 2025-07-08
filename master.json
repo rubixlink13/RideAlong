@@ -813,5 +813,235 @@
                 "NAME"      : "Glory of the Hellfire Raider"
             }
         },
+        {
+            "ID"        : 970,
+            "NAME"      : "Maddened Chaosrunner",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RARE",
+                "ENCOUNTER" : "Wrangler Kravos",
+                "ZONE"      : "Eredath"
+            }
+        },
+        {
+            "ID"        : 973,
+            "NAME"      : "Lambent Mana Ray",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RARE",
+                "ENCOUNTER" : "Venomtail Skyfin",
+                "ZONE"      : "Eredath"
+            }
+        },
+        {
+            "ID"        : 974,
+            "NAME"      : "Vibrant Mana Ray",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RARE",
+                "ENCOUNTER" : "Cracked Fel-Spotted Egg",
+                "ZONE"      : "Broken Isles"
+            }
+        },
+        {
+            "ID"        : 976,
+            "NAME"      : "Scintillating Mana Ray",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RARE",
+                "ENCOUNTER" : "Cracked Fel-Spotted Egg",
+                "ZONE"      : "Broken Isles"
+            }
+        },
+        {
+            "ID"        : 975,
+            "NAME"      : "Felglow Mana Ray",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RARE",
+                "ENCOUNTER" : "Cracked Fel-Spotted Egg",
+                "ZONE"      : "Broken Isles"
+            }
+        },
+        {
+            "ID"        : 906,
+            "NAME"      : "Darkspore Mana Ray",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RARE",
+                "ENCOUNTER" : "Cracked Fel-Spotted Egg",
+                "ZONE"      : "Broken Isles"
+            }
+        },
+        {
+            "ID"        : 980,
+            "NAME"      : "Acid Belcher",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RARE",
+                "ENCOUNTER" : "Skreeg the Devourer",
+                "ZONE"      : "Eredath"
+            }
+        },
+        {
+            "ID"        : 979,
+            "NAME"      : "Crimson Slavermaw",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RARE",
+                "ENCOUNTER" : "Blistermaw",
+                "ZONE"      : "Antoran Wastes"
+            }
+        },
+        {
+            "ID"        : 981,
+            "NAME"      : "Biletooth Gnasher",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RARE",
+                "ENCOUNTER" : ["Puscilla", "Vrax'thul"],
+                "ZONE"      : "Antoran Wastes"
+            }
+        },
+        {
+            "ID"        : 955,
+            "NAME"      : "Vile Fiend",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RARE",
+                "ENCOUNTER" : "Houndmaster Kerrax",
+                "ZONE"      : "Antoran Wastes"
+            }
+        },
+        {
+            "ID"        : 875,
+            "NAME"      : "Midnight",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "DUNGEON",
+                "INSTANCE"  : "Return to Karazhan",
+                "ENCOUNTER" : "Attumen the Huntsman"
+            }
+        },
+        {
+            "ID"        : 883,
+            "NAME"      : "Smoldering Ember Wyrm",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "DUNGEON",
+                "INSTANCE"  : "Return to Karazhan",
+                "ENCOUNTER" : "Nightbane"
+            }
+        },
+        {
+            "ID"        : 791,
+            "NAME"      : "Felblaze Infernal",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RAID",
+                "INSTANCE"  : "The Nighthold",
+                "ENCOUNTER" : "Gul'Dan"
+            }
+        },
+        {
+            "ID"        : 633,
+            "NAME"      : "Hellfire Infernal",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RAID",
+                "INSTANCE"  : "The Nighthold",
+                "ENCOUNTER" : "Gul'Dan"
+            }
+        },
+        {
+            "ID"        : 899,
+            "NAME"      : "Abyss Worm",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RAID",
+                "INSTANCE"  : "Tomb of Sargeras",
+                "ENCOUNTER" : "Mistress Sassz'ine"
+            }
+        },
+        {
+            "ID"        : 971,
+            "NAME"      : "Antoran Charhound",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RAID",
+                "INSTANCE"  : "Antorus, the Burning Throne",
+                "ENCOUNTER" : "F'harg"
+            }
+        },
+        {
+            "ID"        : 954,
+            "NAME"      : "Shackled Ur'zul",
+            "TYPE"      : "DROP",
+            "SOURCE"    : {
+                "TYPE"      : "RAID",
+                "INSTANCE"  : "Antorus, the Burning Throne",
+                "ENCOUNTER" : "Argus the Unmaker"
+            }
+        },
+        {
+            "ID"        : 804,
+            "NAME"      : "Ratstallion",
+            "TYPE"      : "ACHIEVEMENT",
+            "SOURCE"    : {
+                "TYPE"      : "EXPLORATION",
+                "ID"        : 11066,
+                "NAME"      : "Underbelly Tycoon"
+            }
+        },
+        {
+            "ID"        : 775,
+            "NAME"      : "Prestigious War Steed",
+            "TYPE"      : "ACHIEVEMENT",
+            "SOURCE"    : {
+                "TYPE"      : "PVP",
+                "ID"        : 11474,
+                "NAME"      : "Free For All, More For Me"
+            }
+        },
+        {
+            "ID"        : 986,
+            "NAME"      : "Bleakhoof Ruinstrider",
+            "TYPE"      : "ACHIEVEMENT",
+            "SOURCE"    : {
+                "TYPE"      : "EXPLORATION",
+                "ID"        : 12103,
+                "NAME"      : "...And Chew Mana Buns"
+            }
+        },
+        {
+            "ID"        : 846,
+            "NAME"      : "Leyfeather Hippogryph",
+            "TYPE"      : "ACHIEVEMENT",
+            "SOURCE"    : {
+                "TYPE"      : "DUNGEON",
+                "ID"        : 11163,
+                "NAME"      : "Glory of the Legion Hero"
+            }
+        },
+        {
+            "ID"        : 773,
+            "NAME"      : "Grove Defiler",
+            "TYPE"      : "ACHIEVEMENT",
+            "SOURCE"    : {
+                "TYPE"      : "RAID",
+                "ID"        : 11180,
+                "NAME"      : "Glory of the Legion Raider"
+            }
+        },
+        {
+            "ID"        : 972,
+            "NAME"      : "Antoran Gloomhound",
+            "TYPE"      : "ACHIEVEMENT",
+            "SOURCE"    : {
+                "TYPE"      : "RAID",
+                "ID"        : 11987,
+                "NAME"      : "Glory of the Argus Raider"
+            }
+        },
     ]
 }
